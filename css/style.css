@@ -33,7 +33,7 @@ body {
   background-image: url("https://picsum.photos/id/974/700");
   background-repeat: repeat;
   -webkit-background-clip: initial;
-  animation: animate 30s ease-in-out infinite;
+  animation: animate 30s ease-in-out 1;
 }
 
 @keyframes animate {
