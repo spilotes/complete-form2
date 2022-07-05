@@ -112,6 +112,10 @@ body {
   filter: drop-shadow(0 0 0.5rem #c9d1d9);
 }
 
+.form button:active {
+  filter: drop-shadow(0 0 0.5rem #fff);
+}
+
 /* Error and Success */
 .form-control.success input {
   border-color: #2ecc71;
