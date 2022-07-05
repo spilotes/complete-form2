@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #000000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  top: 4.5rem;
+  color: #c9d1d9;
+  position: absolute;
+  background: linear-gradient(90deg, #030008 0%, #00131a 100%);
+  border-radius: 10px;
+  width: 23rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  padding: 1.25rem;
+  display: flex;
+  background-image: url("https://picsum.photos/id/974/700");
+  background-repeat: repeat;
+  -webkit-background-clip: initial;
+  animation: animate 15s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-position: left top;
+  }
+  25% {
+    background-position: right bottom;
+  }
+  50% {
+    background-position: left bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+}
+
+.header h2 {
+  color: #c9d1d9;
+}
+
+.form {
+  padding: 1.25rem;
+}
+
+.form-control {
+  margin-bottom: 0.62rem;
+  padding-bottom: 1.25rem;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 0.62rem;
+  font-size: 0.87rem;
+  width: 100%;
+  padding: 0.62rem;
+}
+
+.form-control i {
+  position: absolute;
+  top: 2.2rem;
+  right: 0.62rem;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form button {
+  background-color: #191970;
+  border: none;
+  color: #fff;
+  font-size: 0.87rem;
+  width: 100%;
+  border-radius: 0.62rem;
+  padding: 0.62rem;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.form button:hover {
+  background-color: #0066cc;
+}
+
+/* Error and Success */
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+@media (max-width: 414px) {
+  .container {
+    top: 8rem;
+  }
+} ;
